@@ -1,0 +1,6 @@
+FROM python
+ENTRYPOINT ["python","client.py"] 
+ADD client.py /
+
+
+CMD [ "python","./client.py" ,"-p 25000"]

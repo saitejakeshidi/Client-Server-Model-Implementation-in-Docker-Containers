@@ -1,0 +1,6 @@
+FROM python
+ENTRYPOINT ["python","server.py"]
+ADD server.py /
+
+
+CMD [ "python","./server.py","-p 25000" ]
